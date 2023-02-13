@@ -10,7 +10,7 @@ import AdminOnly from "@/components/adminOnly";
 
 export default function Home() {
   const { data: session, status } = useSession();
-  const URL = "http://localhost:3000/api/v1/theme";
+  const URL = `${process.env.NEXT_PUBLIC_URL}/api/v1/theme`;
   const router = useRouter();
   const tab = parseInt(router.query.tab);
 

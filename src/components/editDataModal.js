@@ -13,7 +13,7 @@ export default function EditDataModal({
   buttonColor,
 }) {
   const [isLoadings, setLoading] = useState(false);
-  const URL = "http://localhost:3000/api/v1/data";
+  const URL = `${process.env.NEXT_PUBLIC_URL}/api/v1/data`;
   const [inputData, setData] = useState({
     addressBook: "",
     name: "",

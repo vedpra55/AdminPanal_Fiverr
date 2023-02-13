@@ -9,7 +9,7 @@ export default function DataGridMongo({ buttonColor, dataIcons }) {
   const [isModal, setModal] = useState(false);
   const [isOpen, setOpen] = useState(false);
   const [rowId, setRowId] = useState(null);
-  const URL = "http://localhost:3000/api/v1/data";
+  const URL = `${process.env.NEXT_PUBLIC_URL}/api/v1/data`;
 
   const columns = [
     {

@@ -21,7 +21,7 @@ export default function AddDataModal({
     currency: "",
   });
 
-  const URL = "http://localhost:3000/api/v1/data";
+  const URL = `${process.env.NEXT_PUBLIC_URL}/api/v1/data`;
 
   function handleInputChange(e) {
     const { name, value } = e.target;
